@@ -6,6 +6,7 @@ public class SmartTv {
 
     public void ligar() {
         ligada = true;
+        System.out.println("A TV está ligada!");
     }
 
     public void desligar() {
