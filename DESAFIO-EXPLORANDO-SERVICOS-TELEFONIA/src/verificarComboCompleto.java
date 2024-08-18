@@ -1,18 +1,25 @@
 import java.util.Scanner;
 
-public class verificarComboCompleto {
+public class VerificarComboCompleto {
     public static String verificarComboCompleto(String[] servicosContratados) {
         // Variáveis booleanas para verificar a contratação de cada serviço
         boolean movelContratado = false;
         boolean bandaLargaContratada = false;
         boolean tvContratada = false;
 
-        // TODO: Itere sobre os serviços contratados
+        // Iterando sobre os serviços contratados
         for (String servico : servicosContratados) {
+            if (servico.equals("movel")) {
+                movelContratado = true;
+            } else if (servico.equals("banda larga")) {
+                bandaLargaContratada = true;
+            } else if (servico.equals("tv")) {
+                tvContratada = true;
+            }
         }
 
-        // TODO: Verifique se todos os serviços foram contratados
-        if () {
+        // Verificando se todos os serviços foram contratados
+        if (movelContratado && bandaLargaContratada && tvContratada) {
             return "Combo Completo";
         } else {
             return "Combo Incompleto";
@@ -36,5 +43,6 @@ public class verificarComboCompleto {
 
         // Fechando o scanner
         scanner.close();
+
     }
 }
