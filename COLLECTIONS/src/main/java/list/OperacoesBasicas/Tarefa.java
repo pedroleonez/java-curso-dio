@@ -13,4 +13,9 @@ public class Tarefa {
     public String getDescricao() {
         return descricao;
     }
+
+    //toString
+    public String toString() {
+        return descricao;
+    }
 }
