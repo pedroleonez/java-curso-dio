@@ -22,9 +22,4 @@ public class Item {
         return quantidade;
     }
 
-    //toString
-    // public String toString() {
-    //     return nome + " - R$" + preco + " - Quantidade: " + quantidade;
-    // }
-
 }
